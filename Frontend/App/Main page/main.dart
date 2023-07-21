@@ -95,7 +95,7 @@ class _MyHomePageState extends State<MyHomePage> {
                                 Text(
                                   "Gallery",
                                   style: TextStyle(
-                                      fontSize: 13, color: Colors.grey[600]),
+                                      fontSize: 13, color: Colors.orange[700]),
                                 )
                               ],
                             ),
@@ -129,7 +129,7 @@ class _MyHomePageState extends State<MyHomePage> {
                                 Text(
                                   "Camera",
                                   style: TextStyle(
-                                      fontSize: 13, color: Colors.grey[600]),
+                                      fontSize: 13, color: Colors.cyan[600]),
                                 )
                               ],
                             ),
@@ -162,7 +162,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   color: Colors.white,
                 ),
                 onPressed: () {
-                  Navigator.pushReplacementNamed(context, '/signup'); // Navigate to the signup page
+                  Navigator.pushReplacementNamed(context, '/signup'); // Navigate to the login page
                 },
               ),
             ],
