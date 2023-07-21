@@ -35,3 +35,17 @@ if text1 != text2:
     print("It's a Fraud Document") 
 else:
     print("It's a Legal Document")
+
+
+
+#Udated code
+import pytesseract as tess
+from PIL import Image
+D5= Image.open('FIR.jpg')
+text = tess.image_to_string(D5)
+invoice5 = Image.open('FIRa.jpg')
+texta = tess.image_to_string(invoice5)
+if text != texta:   
+    print("It's a Fraud Document") 
+else:
+    print("It's a Legal Document")
