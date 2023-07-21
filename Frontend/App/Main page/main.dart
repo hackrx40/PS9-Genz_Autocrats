@@ -58,12 +58,12 @@ class _MyHomePageState extends State<MyHomePage> {
               children: [
                 if (textScanning) const CircularProgressIndicator(),
                 if (!textScanning && imageFile == null)
-                  Container(
-                    width: 300,
-                    height: 300,
-                    color: Colors.grey[300]!,
-                  ),
-                if (imageFile != null) Image.file(File(imageFile!.path)),
+  Container(
+    width: 300,
+    height: 300,
+    color: Colors.black, // Set the box color to black
+  ),
+if (imageFile != null) Image.file(File(imageFile!.path)),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
