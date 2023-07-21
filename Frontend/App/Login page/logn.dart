@@ -46,13 +46,15 @@ class LoginPage extends StatelessWidget {
       appBar: AppBar(
         title: const Text('Login Page'),
       ),
-      body: Stack(
+      body: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
-        Image.asset(
+          Expanded(
+        child: Image.asset(
           'images/Doc-p.png', // Replace with your image path
           fit: BoxFit.cover,
-          width: double.infinity,
-          height: double.infinity,
+        ),
         ),
         Center(
           child: Padding(
