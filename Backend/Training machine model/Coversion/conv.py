@@ -31,6 +31,17 @@ invoice7.to_excel(Path.cwd() /"Same_Shape"/"invoice7.xlsx")
 invoice8.to_excel(Path.cwd() /"Same_Shape"/"invoice8.xlsx")
 invoice9.to_excel(Path.cwd() /"Same_Shape"/"invoice9.xlsx")
 
+#Added:
+import tabula
+F2 = tabula.convert_into("FIR2.pdf", "FIR_2.csv", output_format="csv", pages='all')
+F3 = tabula.convert_into("FIR3.pdf", "FIR_3.csv", output_format="csv", pages='all')
+F5 = tabula.convert_into("FIR5.pdf", "FIR_5.csv", output_format="csv", pages='all')
+F6 = tabula.convert_into("FIR6.pdf", "FIR_6.csv", output_format="csv", pages='all')
+F7_1 = tabula.convert_into("FIR7.1.pdf", "FIR_7_1.csv", output_format="csv", pages='all')
+F7_2 = tabula.convert_into("FIR7.2.pdf", "FIR_7_2.csv", output_format="csv", pages='all')
+F7_3 = tabula.convert_into("FIR7.3.pdf", "FIR_7_3.csv", output_format="csv", pages='all')
+F9 = tabula.convert_into("FIR9.pdf", "FIR_9.csv", output_format="csv",pages='all')
+
 
 
 
@@ -63,3 +74,5 @@ inv_out4.to_excel(Path.cwd() /"Same_Shape"/"inv_out4.xlsx")
 inv_out7.to_excel(Path.cwd() /"Same_Shape"/"inv_out7.xlsx")
 inv_out8.to_excel(Path.cwd() /"Same_Shape"/"inv_out8.xlsx")
 inv_out9.to_excel(Path.cwd() /"Same_Shape"/"inv_out9.xlsx")
+
+
