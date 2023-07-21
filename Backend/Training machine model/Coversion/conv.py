@@ -40,8 +40,7 @@ F6 = tabula.convert_into("FIR6.pdf", "FIR_6.csv", output_format="csv", pages='al
 F7_1 = tabula.convert_into("FIR7.1.pdf", "FIR_7_1.csv", output_format="csv", pages='all')
 F7_2 = tabula.convert_into("FIR7.2.pdf", "FIR_7_2.csv", output_format="csv", pages='all')
 F7_3 = tabula.convert_into("FIR7.3.pdf", "FIR_7_3.csv", output_format="csv", pages='all')
-F9 = tabula.convert_into("FIR9.pdf", "FIR_9.csv", output_format="csv",pages='all')
-
+F9 = tabula.convert_into("FIR9.pdf", "FIR_9.csv", output_format="csv" pages='all')
 
 
 
