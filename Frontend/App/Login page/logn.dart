@@ -40,19 +40,27 @@ class LoginPage extends StatelessWidget {
     }
   }
 
-  @override
+ @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         title: const Text('Login Page'),
       ),
-      body: Center(
-        child: Padding(
-          padding: const EdgeInsets.all(20.0),
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            crossAxisAlignment: CrossAxisAlignment.stretch,
-            children: [
+      body: Stack(
+        children: [
+        Image.asset(
+          'images/Doc-p.png', // Replace with your image path
+          fit: BoxFit.cover,
+          width: double.infinity,
+          height: double.infinity,
+        ),
+        Center(
+          child: Padding(
+            padding: const EdgeInsets.all(20.0),
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              crossAxisAlignment: CrossAxisAlignment.stretch,
+              children: [
               TextField(
                 controller: bajajIdController,
                 decoration: const InputDecoration(
@@ -86,7 +94,7 @@ class LoginPage extends StatelessWidget {
                   // TODO: Implement "Sign in with" functionality
                   // This function will be called when the button is pressed.
                 },
-                child: const Text('Your Button Text'),
+                child: const Text('Login with Bajaj ID'),
               ),
               const SizedBox(height: 20.0),
               const Text(
@@ -95,8 +103,8 @@ class LoginPage extends StatelessWidget {
                 style: TextStyle(fontSize: 16.0),
               ),
               const SizedBox(height: 10.0),
-              GestureDetector(
-  onTap: () async {
+          GestureDetector(
+            onTap: () async {
     // Navigate to the signup page and wait for a result (success message)
     final result = await Navigator.push(
       context,
@@ -114,15 +122,16 @@ class LoginPage extends StatelessWidget {
     }
   },
   child: const Text(
-    'Sign up',
-    textAlign: TextAlign.center,
-    style: TextStyle(fontSize: 16.0, color: Colors.blue),
-  ),
-),
-
-            ],
+                      'Sign up',
+                      textAlign: TextAlign.center,
+                      style: TextStyle(fontSize: 16.0, color: Colors.blue),
+                    ),
+                  ),
+                ],
+              ),
+            ),
           ),
-        ),
+        ],
       ),
     );
   }
